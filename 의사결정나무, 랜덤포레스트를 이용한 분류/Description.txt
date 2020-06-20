@@ -1,0 +1,31 @@
+
+Data Set Information:
+- 사용자의 대출 연체를 예측하는 문제
+- 대표적인 불균형 분류 문제
+- 개인의 금융거래, 보험, 통신 거래 내역 데이터를 사용
+
+	
+<X>	AGE		연령					연속형
+	TOT_LOAN	대출 총액				연속형
+	TOT_LOAN_CRD	신용대출 총액				연속형
+	LOAN_BNK	은행권에서 발생한 대출 총액		연속형
+	LOAN_CPT	카드사/캐피탈에서 발생한 대출 총액	연속형
+	CRDT_CNT	신용카드 발급 수			연속형
+	GUARN_CNT	보증 건수				연속형
+	INCOME		소득					연속형
+	LOAN_CRD_CNT	신용대출 건수				연속형
+	LATE_RATE	보험료 연체율				연속형
+	LATE_RATE_1Y	최근 1년 보험료 연체율			연속형
+	INS_MON_MAX	월납입보험료 (최대값)			연속형
+	CANCEL_CNT_1Y	최근1년 실효해지건수			연속형
+	CALL_TIME	월별 통화시간				연속형
+	TEL_COST_MON	서비스 납부요금				연속형
+	MOBILE_PRICE	사용중인 핸드폰단말기 가격		연속형
+	SUSP_DAY	회선의 사용정지일수			연속형
+	LATE_TEL	핸드폰 요금 연체금액			연속형
+	COMB_COMM	결합상품가입 여부			이진형
+	SEX		성별: 남자(1), 여자(0)			이진형
+	PAY_METHOD(4)	핸드폰 요금 납부방법(B,C,D) 			명목형(One-hot-encoding)
+	JOB(4)		직업군(B,C,D)   			명목형(One-hot-encoding)
+
+<Y>	TARGET		대출연체여부: 미발생(0), 발생(1)	이진 (타겟변수)
